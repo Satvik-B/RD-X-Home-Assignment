@@ -4,6 +4,7 @@ import Gmap from './assets/components/Gmap';
 import React from 'react';
 import Weather from './assets/components/Weather';
 import { Box } from '@mui/system';
+import Currency from './assets/components/Currency';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
             <Gmap />
           </Box>
           <Box sx={{height:"50%"}}>
-            
+            <Currency />
           </Box>
         </Box>
       </Box>

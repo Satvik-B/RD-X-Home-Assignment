@@ -30,7 +30,6 @@ class Weather extends React.Component {
         fetch("https://maps.googleapis.com/maps/api/geocode/json?latlng="+this.state.latitude+","+this.state.longitude+"&key=AIzaSyAXFFmqi-9sGBTbXNedonNH3koLV3rjqL8")
         .then((res) => res.json()).then((json)=>{
             this.setState({address:json, addressSet:true});
-            console.log(JSON.stringify(json, null, 2));
         },
         error => {
             console.log("error in loading data from gmap");
